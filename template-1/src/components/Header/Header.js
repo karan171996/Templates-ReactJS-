@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-
+import {NavLink} from 'react-router-dom';
+import './Header.css';
 class Header extends Component {
     render() {
         return (
             <header>
                 <div className="container">
                    <div id="branding">
-                      <h1>Acme Web Design</h1>
+                      <h1><span className="highlight">Acme</span> Web Design</h1>
                    </div>
-                </div>
                 <nav>
                     <ul>
-                        <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/About'>About</Link></li>
-                        <li><Link to='/Services'>Services</Link></li>
+                        <li><NavLink to = '/' activeStyle={{
+                            color: '#e8491d',
+                            fontWeight:'bold'
+                        }} exact> Home </NavLink></li>
+                       
+                        <li><NavLink to = '/About' activeStyle={{
+                            color: '#e8491d',
+                            fontWeight: 'bold'
+                        }} exact> About </NavLink></li>
+                        
+                        <li><NavLink to = '/Services' activeStyle={{
+                            color: '#e8491d',
+                            fontWeight: 'bold'
+                        }} exact> Services </NavLink></li>
                     </ul>
                 </nav>
+                </div>
             </header>
         );
     }

@@ -50,6 +50,7 @@ class Home extends Component {
               </section>
 
               <footer>
+                  
                   <p>Acme Web Design, Copyright &copy; 2018</p>
               </footer>
             </div>
