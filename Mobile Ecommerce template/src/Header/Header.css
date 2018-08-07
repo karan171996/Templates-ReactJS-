@@ -1,0 +1,42 @@
+.parent{
+height:70px;
+border-bottom: 3px solid gray;
+}
+.parent>.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+#navlist-header>ul li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+#branding{
+          float:left;
+          margin-top:20px;
+}
+#branding h1{
+         margin:0;
+}
+#navlist-header{
+    float:right;
+    margin-top:20px;
+}
+nav {
+    float: right;
+}
+@media(max-width:768px){
+    #branding {
+        float: left;
+        margin-top: 20px;
+    }
+    #navlist-header {
+        display:none;
+    }
+
+}

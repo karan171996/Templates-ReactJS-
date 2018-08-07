@@ -1,0 +1,16 @@
+.loader>img{
+    position:absolute;
+    top:30%;
+    left:45%;
+    right:50%;
+    bottom:50%;
+}
+@media(max-width:768px){
+.loader>img {
+    position: absolute;
+    top:30%;
+    left:45%;
+    right: 50%;
+    bottom: 50%;
+}
+}
